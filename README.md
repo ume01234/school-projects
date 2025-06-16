@@ -46,7 +46,7 @@ AR技術に関する授業での成果物
 - **開発時間**：約30分
 - **エディタ**：Visual Studio Code  
 - **AIの使用**：
-- - OpenAI ChatGPTによるコード生成及び修正  
-- - ChatGPTのDALL·E機能によって背景透過PNGを生成
+  - OpenAI ChatGPTによるコード生成及び修正  
+  - ChatGPTのDALL·E機能によって背景透過PNGを生成
 
 
