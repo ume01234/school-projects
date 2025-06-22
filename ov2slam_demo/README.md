@@ -3,7 +3,7 @@
 ビジュアルSLAMフレームワークについての論文を参考にした追実装。
 
 
-## ✔︎論文情報
+## ✔︎ 論文情報
 
 - **タイトル**: OV²SLAM: A Fully Online and Versatile Visual SLAM for Real-Time Applications  
 - **著者**: Axel Barrau, Pierre Gouton, Jean-Philippe Tardif, et al.  
@@ -15,7 +15,7 @@
 
 ---
 
-## ✔︎技術構成
+## ✔︎ 技術構成
 
 OV²SLAMの構成は、従来のビジュアルSLAMを簡素化しつつも、オンライン性と高精度を両立している。主な構成要素：
 
@@ -42,7 +42,7 @@ OV²SLAMの構成は、従来のビジュアルSLAMを簡素化しつつも、�
 
 ---
 
-## ✔︎実行コマンド
+## ✔︎ 実行コマンド
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
@@ -54,7 +54,7 @@ python main.py
 
 ---
 
-## ✔︎参考
+## ✔︎ 参考
 
 - 論文: [arXiv 2102.04060](https://arxiv.org/abs/2102.04060)
 - iBoW-LCD: Loop Closure Detection via Incremental Bag-of-Words

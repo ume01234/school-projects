@@ -1,7 +1,7 @@
 # OV²SLAM: A Fully Online and Versatile Visual SLAM for Real-Time Applications
 Reimplementation based on a research paper on a visual SLAM framework.
 
-## ✔︎Paper Information
+## ✔︎ Paper Information
 
 - **Title**: OV²SLAM: A Fully Online and Versatile Visual SLAM for Real-Time Applications  
 - **Authors**: Axel Barrau, Pierre Gouton, Jean-Philippe Tardif, et al.  
@@ -13,7 +13,7 @@ It supports monocular, stereo, and RGB-D cameras and features a flexible ROS-bas
 
 ---
 
-## ✔︎Technical Overview
+## ✔︎ Technical Overview
 
 OV²SLAM simplifies traditional visual SLAM pipelines while maintaining real-time performance and high accuracy. The core components are:
 
@@ -40,7 +40,7 @@ OV²SLAM simplifies traditional visual SLAM pipelines while maintaining real-tim
 
 ---
 
-## ✔︎Execution Commands
+## ✔︎ Execution Commands
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
@@ -50,6 +50,6 @@ python main.py
 ```
 
 ---
-## ✔︎References
+## ✔︎ References
 - Paper: [arXiv:2102.04060](https://arxiv.org/abs/2102.04060)  
 - iBoW-LCD: Loop Closure Detection via Incremental Bag-of-Words
