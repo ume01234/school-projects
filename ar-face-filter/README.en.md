@@ -1,8 +1,9 @@
 # AR Face Filter
+An AR app using Mediapipe and OpenCV to apply face filters.
 
 ## ✔︎ Overview
 
-A product developed as part of a class on AR technology.  
+A product developed as part of a class on AR technology.
 This is a real-time AR application that automatically applies filters to the user's face.  
 Users can switch between filters (cat, crown, hat, cat ears, etc.) using keyboard input.
 
