@@ -1,4 +1,5 @@
 # AR Face Filter
+An AR app using Mediapipe and OpenCV to apply face filters.
 
 ## ✔︎ Overview
 
