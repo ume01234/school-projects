@@ -1,4 +1,5 @@
 # OV²SLAM: A Fully Online and Versatile Visual SLAM for Real-Time Applications
+> [View English version](./README.en.md)
 ビジュアルSLAMフレームワークについての論文を参考にした追実装。
 
 
