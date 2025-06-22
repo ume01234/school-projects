@@ -51,5 +51,5 @@ python main.py
 
 ---
 ## References
-- Paper: arXiv:2102.04060
+- Paper: [arXiv:2102.04060](https://arxiv.org/abs/2102.04060)  
 - iBoW-LCD: Loop Closure Detection via Incremental Bag-of-Words
