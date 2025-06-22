@@ -47,6 +47,7 @@ source .venv/bin/activate
 pip install opencv-python numpy
 pip install -r requirements.txt   
 python main.py
+```
 
 ---
 ## References
