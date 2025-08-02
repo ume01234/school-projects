@@ -1,0 +1,8 @@
+# 使用ライブラリ一覧
+flask
+mysql-connector-python
+openai
+python-dotenv
+flask-session
+google-generativeai
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ゴミ出しスケジュール</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+</head>
+<body>
+  <h2>{{ area_name }}のゴミ出しスケジュール</h2>
+  <p>今日の日付：{{ today.strftime('%Y年%m月%d日') }}</p>
+
+  <ul class="schedule-list">
+    {% for item in schedule %}
+      <li>
+        <span class="date">{{ item.date }}</span>
+        <span class="gomi-types">{{ item.gomi_types | join(', ') }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <div class="button-row">
+    <a href="/chat"><button>AIに捨て方を相談する</button></a>
+    <a href="/change-location"><button>住んでいる場所を変更する</button></a>
+  </div>
+</body>
+</html>

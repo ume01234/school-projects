@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ゴミの捨て方AIチャット</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='chat.css') }}">
+  <script>
+    async function sendMessage() {
+      const input = document.getElementById('userInput');
+      const message = input.value;
+      if (!message) return;
+
+      const chatLog = document.getElementById('chatLog');
+      chatLog.innerHTML += `<p><strong>あなた：</strong> ${message}</p>`;
+      input.value = '';
+
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message })
+      });
+
+      const data = await response.json();
+      chatLog.innerHTML += `<p><strong>AI：</strong> ${data.response}</p>`;
+      chatLog.scrollTop = chatLog.scrollHeight;
+    }
+  </script>
+</head>
+<body>
+  <h2>AIにゴミの捨て方を相談する</h2>
+
+  <a href="/dashboard"><button>ゴミの日に戻る</button></a>
+
+  <div id="chatLog" style="border:1px solid #ccc; padding:10px; height:300px; overflow-y:scroll; margin-top:20px;"></div>
+
+  <p class="disclaimer">
+  ※このAIの回答は参考情報です。正確さを100%保証するものではありません。<br>
+  詳しい情報や最新のルールは、<a href="https://www.city.tsukuba.lg.jp/soshikikarasagasu/seikatsukankyobukankyoeiseika/gyomuannai/2/1000820.html" target="_blank" rel="noopener">つくば市ホームページ</a>をご確認ください。
+</p>
+
+  <input type="text" id="userInput" placeholder="例：発泡スチロールの捨て方は？" style="width:80%;">
+  <button onclick="sendMessage()">送信</button>
+</body>

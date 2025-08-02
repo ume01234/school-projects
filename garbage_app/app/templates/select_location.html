@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>地域選択</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='select_location.css') }}">
+</head>
+<body>
+  <h1 class="app-title">ゴミナビつくば🗑️</h1>
+  <h2>あなたの住んでいる地域を入力してください！</h2>
+
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <ul>
+        {% for message in messages %}
+          <li style="color: red;">{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endwith %}
+
+  <form method="POST">
+    <input type="text" name="area_name" placeholder="例：春日" required>
+    <button type="submit">決定</button>
+  </form>
+  
+</body>
+</html>
